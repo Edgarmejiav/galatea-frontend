@@ -1,0 +1,24 @@
+<div class="row justify-content-center">
+    <h1 class="text-primary p-5">Logros</h1>
+</div>
+
+<div class="row ">
+    <div *ngFor="let logro of logros" class="col-sm-12 col-md-12 m-4  border border-primary">
+        <div class="row">
+            <span>
+                <div class="far fa-theater-masks"></div>
+                <h1 class="text-primary px-3 ">{{logro.descripcion}} {{logro.lugar}}</h1>
+            </span>
+            <div class="col-sm-12 col-md-6 ">
+                <i class="far fa-ticket"></i>
+                <h2 class="text-secondary">{{logro.presentacion.nombre}}</h2>
+                <img class="img-fluid p-3" src="https://images.pexels.com/photos/1182127/pexels-photo-1182127.jpeg" alt="">
+            </div>
+            <div class="col-sm-12 col-md-6 p-5">
+                <p>{{logro.presentacion.descripcion}}</p>
+                <button type="button" class="btn btn-outline-primary"> <h1>Ver corto</h1></button>
+            </div>
+        </div>
+    </div>
+
+</div>

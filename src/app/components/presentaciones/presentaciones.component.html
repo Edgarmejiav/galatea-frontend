@@ -1,0 +1,39 @@
+<div class="row justify-content-center">
+    <h1 class="text-primary p-5">Teatro</h1>
+</div>
+<div class="row">
+    <div *ngFor="let presentacion of presentaciones" class="col-sm-12 col-md-6 col-lg-4 pb-5 ">
+        <h2 class="text-secondary">{{presentacion.nombre}}</h2>
+        <h5>
+            <Strong>Director:{{presentacion.director.nombres}}</Strong> </h5>
+        <h5>
+            <Strong>reparto:</Strong> </h5>
+        <div class="pl-5" *ngFor="let reparto of presentacion.reparto">
+            <h5> {{reparto.persona.nombres}} </h5>
+        </div>
+        <h5> <strong>Equipo Técnico</strong> </h5>
+        <div class="pl-5" *ngFor="let equipoTec of presentacion.equipoTec">
+            <h5> <strong>{{equipoTec.ocupacion}}:</strong> {{equipoTec.persona.nombres}}</h5>
+        </div>
+        <h5> Ddc Cajamarca </h5>
+        <button type="button" class="btn btn-primary btn-sm">Ver detalle</button>
+    </div>
+
+
+
+</div>
+<div class="row pt-5">
+    <div class="col">
+        <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, aut optio vero vitae veritatis nisi doloribus, quod facilis accusamus, esse neque ipsa laborum ab provident excepturi itaque quibusdam nemo aliquid?</p>
+    </div>
+</div>
+
+<div>
+    <h2 class="text-secondary">Galeria</h2>
+    <div class="row">
+        <div class="col-3">
+            <img class="img-fluid p-3" src="https://images.pexels.com/photos/1182127/pexels-photo-1182127.jpeg" alt="">
+
+        </div>
+    </div>
+</div>

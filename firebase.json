@@ -1,0 +1,16 @@
+{
+    "hosting": {
+        "site": "galateaprueba",
+        "public": "dist/galateaPageWeb",
+
+        "ignore": [
+            "firebase.json",
+            "**/.*",
+            "**/node_modules/**"
+        ],
+        "rewrites": [{
+            "source": "**",
+            "destination": "/index.html"
+        }]
+    }
+}

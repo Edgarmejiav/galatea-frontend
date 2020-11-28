@@ -1,0 +1,51 @@
+<h1>Crear persona</h1>
+<div>
+    <button routerLink="/personas" type="button" class="btn btn-danger "> <i class="fa fa-arrow-left"></i> Agregar</button>
+</div>
+
+
+<div class="row pt-5">
+    <div class="col">
+        <form (ngSubmit)="guardar( f )" #f="ngForm">
+
+            <div class="form-group ">
+                <label>id</label>
+                <input type="text " class="form-control " [(ngModel)]="persona._id" name="_id" placeholder="_id " required disabled>
+            </div>
+
+            <div class="form-group ">
+                <label>DNI</label>
+                <input type="text " class="form-control " [(ngModel)]="persona.dni" name="dni" placeholder="DNI " required>
+            </div>
+            <div class="form-group ">
+                <label>nombre</label>
+                <input type="text " class="form-control " [(ngModel)]="persona.nombres" name="nombres" placeholder="nombres ">
+            </div>
+            <div class="form-group ">
+                <label>Primer apellido</label>
+                <input type="text " class="form-control " [(ngModel)]="persona.apellidoPaterno" name="apellidoPaterno" placeholder="apellidoPaterno ">
+            </div>
+            <div class="form-group ">
+                <label>Segundo apellido</label>
+                <input type="text " class="form-control " [(ngModel)]="persona.apellidoMaterno" name="apellidoMaterno" placeholder="apellidoPaterno ">
+            </div>
+            <div class="form-group ">
+                <label>Fecha de nacimiento</label>
+                <input type="date " class="form-control " [(ngModel)]="persona.f_nacimiento" name="f_nacimiento" placeholder="Fecha de nacimiento ">
+            </div>
+            <div class="form-group ">
+                <label>ocupacion</label>
+                <input type="date " class="form-control " [(ngModel)]="persona.ocupacion" name="ocupacion" placeholder="ocupacion ">
+            </div>
+            <div class="form-group ">
+                <label>img</label>
+                <input type="text " class="form-control " [(ngModel)]="persona.img" name="img" placeholder="img ">
+            </div>
+            <div class="form-group ">
+                <label>Genero</label>
+                <input type="text " class="form-control " [(ngModel)]="persona.sexo" name="sexo" placeholder="Genero ">
+            </div>
+            <button type="submit " class="btn btn-primary mb-2 ">Crear</button>
+        </form>
+    </div>
+</div>

@@ -1,0 +1,29 @@
+<div class="row justify-content-center">
+    <h1 class="text-primary p-5">Conócenos</h1>
+</div>
+
+<div class="row">
+    <div *ngFor="let persona of personas" class="col-sm-12 col-md-6 col-lg-4 ">
+        <div class="p-3">
+            <img class="img-fluid " src="https://images.pexels.com/photos/443446/pexels-photo-443446.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
+            <div>
+                <h6>{{persona.nombres | titlecase}} {{persona.apellidoPaterno | titlecase }} {{persona.apellidoMaterno | titlecase }}</h6>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+<div>
+    <h2 class="text-secondary">Misión</h2>
+    <p>Promover y difundir el arte y la cultura a través del arte escénico y dramático. </p>
+</div>
+<div>
+    <h2 class="text-secondary"> Visión</h2>
+    <p>Galatea Artes escénicas es una asociación artística sin fines de lucro en Cajamarca, que propone, crea, produce teatro y cine, con un alcance local, nacional e internacional. </p>
+</div>
+
+<div>
+    <h2 class="text-secondary"> Valores</h2>
+</div>
