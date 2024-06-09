@@ -1,47 +1,20 @@
 {
-  "name": "galatea-page-web",
-  "version": "0.0.0",
+  "name": "galatea",
+  "type": "module",
+  "version": "0.0.1",
   "scripts": {
-    "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build",
-    "test": "ng test",
-    "lint": "ng lint",
-    "e2e": "ng e2e"
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro check && astro build",
+    "preview": "astro preview",
+    "astro": "astro"
   },
-  "private": true,
   "dependencies": {
-    "@angular/animations": "~10.0.6",
-    "@angular/common": "~10.0.6",
-    "@angular/compiler": "~10.0.6",
-    "@angular/core": "~10.0.6",
-    "@angular/forms": "~10.0.6",
-    "@angular/platform-browser": "~10.0.6",
-    "@angular/platform-browser-dynamic": "~10.0.6",
-    "@angular/router": "~10.0.6",
-    "rxjs": "~6.5.5",
-    "sweetalert2": "^10.10.4",
-    "tslib": "^2.0.0",
-    "zone.js": "~0.10.3"
-  },
-  "devDependencies": {
-    "@angular-devkit/build-angular": "~0.1000.5",
-    "@angular/cli": "~10.0.5",
-    "@angular/compiler-cli": "~10.0.6",
-    "@types/node": "^12.11.1",
-    "@types/jasmine": "~3.5.0",
-    "@types/jasminewd2": "~2.0.3",
-    "codelyzer": "^6.0.0",
-    "jasmine-core": "~3.5.0",
-    "jasmine-spec-reporter": "~5.0.0",
-    "karma": "~5.0.0",
-    "karma-chrome-launcher": "~3.1.0",
-    "karma-coverage-istanbul-reporter": "~3.0.2",
-    "karma-jasmine": "~3.3.0",
-    "karma-jasmine-html-reporter": "^1.5.0",
-    "protractor": "~7.0.0",
-    "ts-node": "~8.3.0",
-    "tslint": "~6.1.0",
-    "typescript": "~3.9.5"
+    "@astrojs/check": "^0.7.0",
+    "@astrojs/tailwind": "^5.1.0",
+    "@fontsource-variable/onest": "^5.0.4",
+    "astro": "^4.10.0",
+    "tailwindcss": "^3.4.4",
+    "typescript": "^5.4.5"
   }
 }
