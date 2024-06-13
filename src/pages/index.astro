@@ -18,14 +18,27 @@ import BentoItem from "../components/BentoItem.astro"
     </h1>
     <p> La Asociación <strong class="font-extrabold"> Galatea</strong> fue creada el 3 de diciembre de 2017 para
         promover
-        y difundir el arte y la cultura en Cajamarca. Se enfoca en la creación, representación,
-        producción y reproducción de <strong class="font-extrabold"> obras teatrales y audiovisuales </strong> con
-        propuestas vanguardistas. </p>
+        y difundir el arte y la cultura en Cajamarca. </p>
     <br/>
     <p> A lo largo de estos seis años, Galatea ha generado <strong class="font-extrabold"> proyectos teatrales y
         cinematográficos </strong> que han tenido alcance local, <strong class="font-extrabold"> nacional e
         internacional </strong></P>
 </section>
+
+
+<section
+        class="
+ text-white relative z-10 mx-auto mt-24 max-w-[70ch] text-pretty px-6 text-left text-xl sm:px-20  "
+>
+    <!--<Logo class="m-auto mb-10 h-auto w-16 text-white" />-->
+    <h1
+            class="   mx-auto mb-10 text-wrap text-center text-4xl font-semibold tracking-wide "
+    >
+        Talleres
+    </h1>
+
+</section>
+
 
 <section
         class={` 
@@ -42,6 +55,7 @@ import BentoItem from "../components/BentoItem.astro"
         bg-cover bg-center bg-no-repeat opacity-90 bg-blend-luminosity duration-1000 ease-in-out group-hover:scale-110"
                 data-src="img/taller-teatro.png"
         >
+            <img src="img/taller-teatro-1.png" alt="taller-teatro-1"/>
         </div>
 
         <p
@@ -64,6 +78,7 @@ import BentoItem from "../components/BentoItem.astro"
         bg-cover bg-center bg-no-repeat opacity-90 bg-blend-luminosity duration-1000 ease-in-out group-hover:scale-110"
                 data-src="img/taller-teatro.png"
         >
+            <img src="img/taller-cine.png" alt="taller-cine"/>
         </div>
         <p
                 slot="content"
@@ -71,9 +86,31 @@ import BentoItem from "../components/BentoItem.astro"
                 set:html={" Comenzamos nuestro taller de cine el 17 de Junio, enfocado en la escritura de guiones, manejo de cámara y dirección de actores. Con una duración de 3 meses."}
         />
     </BentoItem>
+
+</section>
+
+<section
+        class="
+ text-white relative z-10 mx-auto mt-24 max-w-[70ch] text-pretty px-6 text-left text-xl sm:px-20  "
+>
+    <!--<Logo class="m-auto mb-10 h-auto w-16 text-white" />-->
+    <h1
+            class="   mx-auto mb-10 text-wrap text-center text-4xl font-semibold tracking-wide "
+    >
+        Obras de teatro
+    </h1>
+</section>
+<section
+        class={` 
+    w-full max-w-[1400px]
+    grid lg:grid-cols-10 auto-rows-[30rem] gap-4
+    mx-auto p-6 md:p-12 lg:p-20
+  `}
+>
+
     <BentoItem
             class="col-span-10 lg:col-span-6"
-            title={"i18n.BENTO_TITLE_3"}
+            title={"Relatos Latinoamericanos 🤵‍♀️💫 "}  subtitle="FUTUROFOBIA"
     >
         <div
                 slot="image"
@@ -82,13 +119,15 @@ import BentoItem from "../components/BentoItem.astro"
         bg-cover bg-center bg-no-repeat opacity-90 bg-blend-luminosity duration-1000 ease-in-out group-hover:scale-110"
                 data-src="/gallery/img-1.webp"
         >
+            <img src="img/futurofobia.png" alt="futofobia"/>
         </div>
         <p
                 slot="content"
                 class="text-white max-w-xl text-base md:text-lg"
+                set:html="Existen fobias de todo tipo. Y remedios para curarlas más extrañas aún. Eso descubrirá Amanda cuando le toque llegar a la casa de Gio para cobrarle por un servicio que nunca necesitó! Ven a reírte e identificarte con estos tiernos personajes. Y tú … ¿a que le tienes fobia?"
         />
     </BentoItem>
-    <BentoItem class="col-span-10 lg:col-span-4" title={"i18n.BENTO_TITLE_4"}>
+    <BentoItem class="col-span-10 lg:col-span-4" title={"Relatos Latinoamericanos 🤵‍♀️💫 "}  subtitle="EN EL BORDE">
         <div
                 slot="image"
                 class="background transition-scale absolute bottom-0 left-0 top-0
@@ -96,10 +135,31 @@ import BentoItem from "../components/BentoItem.astro"
         bg-cover bg-center bg-no-repeat opacity-90 bg-blend-luminosity duration-1000 ease-in-out group-hover:scale-110"
                 data-src="/gallery/img-1.webp"
         >
+            <img src="img/en-el-borde.png" alt="taller-cine"/>
         </div>
         <p
                 slot="content"
                 class="text-white max-w-xl text-base md:text-lg"
+                set:html="                En la soledad del borde costero de Lima, dos almas perdidas, Adrian y Lara, se encuentran con la firme intención de poner fin a sus vidas. "
+        />
+    </BentoItem>
+    <BentoItem
+            class="lg:col-span-10"
+            title={"Relatos Latinoamericanos 🤵‍♀️💫 "}  subtitle="PAPÁ QUERIDO"
+    >
+        <div
+                slot="image"
+                class="background transition-scale absolute bottom-0 left-0 top-0
+        -z-10 h-full w-full bg-blue-950
+        bg-cover scale-[1.40] bg-center bg-no-repeat opacity-90 bg-blend-luminosity duration-1000 ease-in-out group-hover:scale-150"
+                data-src="/gallery/img-1.webp"
+        >
+            <img src="img/papa-querido.png" alt="papa-querido"/>
+        </div>
+        <p
+                slot="content"
+                class="text-white max-w-xl text-base md:text-lg"
+                set:html="Cuatro hermanos que no se conocen se encuentran el día del velorio de su padre y revelan sus verdaderas identidades, distintas facetas de sus vidas y dándose cuenta de cuanto influyó él en sus personalidades."
         />
     </BentoItem>
 </section>
