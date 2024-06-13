@@ -9,7 +9,7 @@ import BentoItem from "../components/BentoItem.astro";
 </Layout>
 <section
         class="
- text-white relative z-10 mx-auto mt-24 max-w-[70ch] text-pretty px-6 text-left text-xl sm:px-20  "
+ text-white relative z-10 mx-auto mt-24 max-w-[75ch] text-pretty px-6 text-left text-xl sm:px-20  "
 >
     <!--<Logo class="m-auto mb-10 h-auto w-16 text-white" />-->
     <h1
@@ -18,7 +18,8 @@ import BentoItem from "../components/BentoItem.astro";
         Book actoral
 
     </h1>
-    <p> Descubre más fotos de nuestros actores y actrices. </p>
+    <p> Galatea ha proporcionado a sus actores y actrices una plataforma sólida para el desarrollo y exhibición de sus
+        habilidades interpretativas. </p>
     <br/>
 
 </section>
@@ -44,10 +45,31 @@ import BentoItem from "../components/BentoItem.astro";
         >
             <img src="gallery/img-15.webp" alt="elenco"/>
         </div>
-
+        <p
+                slot="content"
+                class=" text-white max-w-xl text-base md:text-lg"
+                set:html={"La Asociación " +
+                    "<strong class='font-extrabold'> " +
+                    "Galatea</strong>" +
+                    " ha promovido el arte en Cajamarca a través de producciones teatrales y audiovisuales. En estos seis años, sus actores y actrices han sido fundamentales en obras como \"La oda al 03 de enero\", \"Rimay pacha\" y \"El encuentro, la otra mirada"
+                }
+        />
     </BentoItem>
 </section>
+<section
+        class="
+ text-white relative z-10 mx-auto mt-24 max-w-[75ch] text-pretty px-6 text-left text-xl sm:px-20  "
+>
+    <!--<Logo class="m-auto mb-10 h-auto w-16 text-white" />-->
+    <h1
+            class="   mx-auto  text-wrap text-center text-4xl font-semibold tracking-wide "
+    >
+        Galería
 
+    </h1>
+
+
+</section>
 
 <Galeria/>
 
