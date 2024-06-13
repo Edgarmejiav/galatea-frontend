@@ -1,6 +1,5 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Header from "../components/header.astro";
 import Galeria from "../components/galeria.astro";
 import BentoItem from "../components/BentoItem.astro";
 ---
@@ -9,44 +8,46 @@ import BentoItem from "../components/BentoItem.astro";
 
 </Layout>
 <section
-        class={` 
-    w-full max-w-[1400px]
-    grid lg:grid-cols-10 auto-rows-[30rem] gap-4
-    mx-auto p-6 md:p-12 lg:p-20
-  `}
->
-
-<BentoItem
-        class=" lg:col-span-10"
-        title={"Elenco 2024 "}  subtitle="Galatea"
->
-    <div
-            slot="image"
-            class="background transition-scale absolute bottom-0 left-0 top-0
-        -z-10 h-full w-full bg-blue-950
-        bg-cover scale-[1.40] bg-center bg-no-repeat opacity-90 bg-blend-luminosity duration-1000 ease-in-out group-hover:scale-150"
-            data-src="/gallery/img-1.webp"
-    >
-        <img src="gallery/img-15.webp" alt="elenco"/>
-    </div>
-
-</BentoItem>
-    </section>
-<section
         class="
  text-white relative z-10 mx-auto mt-24 max-w-[70ch] text-pretty px-6 text-left text-xl sm:px-20  "
 >
     <!--<Logo class="m-auto mb-10 h-auto w-16 text-white" />-->
     <h1
-            class="   mx-auto mb-10 text-wrap text-center text-4xl font-semibold tracking-wide "
+            class="   mx-auto  text-wrap text-center text-4xl font-semibold tracking-wide "
     >
         Book actoral
 
     </h1>
-    <p> Descubre más  fotos de nuestros actores y actrices. </p>
+    <p> Descubre más fotos de nuestros actores y actrices. </p>
     <br/>
 
 </section>
+
+<section
+        class={` 
+    w-full max-w-[1400px]
+    grid lg:grid-cols-10 auto-rows-[30rem] gap-4
+    mx-auto p-6 md:p-6 lg:p-10
+  `}
+>
+
+    <BentoItem
+            class=" lg:col-span-10 [&>div>h2]:text-8xl [&>div>h3]:text-5xl"
+            title={"Elenco 2024 "} subtitle="Galatea"
+    >
+        <div
+                slot="image"
+                class="background transition-scale absolute bottom-0 left-0 top-0
+        -z-10 h-full w-full bg-blue-950
+        bg-cover scale-[1.40] bg-center bg-no-repeat opacity-90 bg-blend-luminosity duration-1000 ease-in-out group-hover:scale-150"
+                data-src="/gallery/img-1.webp"
+        >
+            <img src="gallery/img-15.webp" alt="elenco"/>
+        </div>
+
+    </BentoItem>
+</section>
+
 
 <Galeria/>
 
