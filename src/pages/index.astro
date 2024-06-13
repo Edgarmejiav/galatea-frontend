@@ -22,7 +22,7 @@ import BentoItem from "../components/BentoItem.astro"
     <br/>
     <p> A lo largo de estos seis años, Galatea ha generado <strong class="font-extrabold"> proyectos teatrales y
         cinematográficos </strong> que han tenido alcance local, <strong class="font-extrabold"> nacional e
-        internacional </strong></P>
+        internacional. </strong></P>
 </section>
 
 
@@ -47,7 +47,8 @@ import BentoItem from "../components/BentoItem.astro"
     mx-auto p-6 md:p-12 lg:p-20
   `}
 >
-    <BentoItem class="col-span-10 lg:col-span-4" title={"TALLER DE TEATRO"} subtitle=" Martes y Jueves de  3:00 a 5:00 p.m. ">
+    <BentoItem class="col-span-10 lg:col-span-4" title={"TALLER DE TEATRO"}
+               subtitle=" Martes y Jueves de  3:00 a 5:00 p.m. ">
         <div
                 slot="image"
                 class="background transition-scale absolute bottom-0 left-0 top-0
@@ -61,7 +62,10 @@ import BentoItem from "../components/BentoItem.astro"
         <p
                 slot="content"
                 class=" text-white max-w-xl text-base md:text-lg"
-                set:html={"¡Exprésate, diviértete y descubre tu talento en nuestro taller de teatro! 🎭✨ Si tienes 17 años o más, ¡este es tu momento para brillar! Únete a nosotros este 17 de Junio y vive la magia del escenario. 🌟 "
+                set:html={"¡Exprésate, diviértete y descubre tu talento en nuestro taller de teatro! 🎭✨ Si tienes 17 años o más, ¡este es tu momento para brillar! Únete a nosotros este 17 de Junio y vive la magia del escenario. 🌟 " +
+                    "<a href='https://wa.me/5196089120583?text=Estoy%20interesado%20en%20el%20Taller' target='_blank' class=\"bg-green-400  rounded-lg px-5 p-[10xp] \">\n" +
+                    "    Inscripciones\n" +
+                    "</a> "
                 }
         />
     </BentoItem>
@@ -83,7 +87,11 @@ import BentoItem from "../components/BentoItem.astro"
         <p
                 slot="content"
                 class="text-white max-w-xl text-base md:text-lg"
-                set:html={" Comenzamos nuestro taller de cine el 17 de Junio, enfocado en la escritura de guiones, manejo de cámara y dirección de actores. Con una duración de 3 meses."}
+                set:html={" Comenzamos nuestro taller de cine el 17 de Junio, enfocado en la escritura de guiones, manejo de cámara y dirección de actores. Con una duración de 3 meses." +
+                    "<a href='https://wa.me/5196089120583?text=Estoy%20interesado%20en%20el%20Taller' target='_blank' class=\"bg-green-400  rounded-lg px-5 p-[10xp] \">\n" +
+                    "    Inscripciones\n" +
+                    "</a> "
+                }
         />
     </BentoItem>
 
@@ -110,7 +118,7 @@ import BentoItem from "../components/BentoItem.astro"
 
     <BentoItem
             class="col-span-10 lg:col-span-6"
-            title={"Relatos Latinoamericanos 🤵‍♀️💫 "}  subtitle="FUTUROFOBIA"
+            title={"Relatos Latinoamericanos 🤵‍♀️💫 "} subtitle="FUTUROFOBIA"
     >
         <div
                 slot="image"
@@ -127,7 +135,7 @@ import BentoItem from "../components/BentoItem.astro"
                 set:html="Existen fobias de todo tipo. Y remedios para curarlas más extrañas aún. Eso descubrirá Amanda cuando le toque llegar a la casa de Gio para cobrarle por un servicio que nunca necesitó! Ven a reírte e identificarte con estos tiernos personajes. Y tú … ¿a que le tienes fobia?"
         />
     </BentoItem>
-    <BentoItem class="col-span-10 lg:col-span-4" title={"Relatos Latinoamericanos 🤵‍♀️💫 "}  subtitle="EN EL BORDE">
+    <BentoItem class="col-span-10 lg:col-span-4" title={"Relatos Latinoamericanos 🤵‍♀️💫 "} subtitle="EN EL BORDE">
         <div
                 slot="image"
                 class="background transition-scale absolute bottom-0 left-0 top-0
@@ -145,7 +153,7 @@ import BentoItem from "../components/BentoItem.astro"
     </BentoItem>
     <BentoItem
             class="lg:col-span-10"
-            title={"Relatos Latinoamericanos 🤵‍♀️💫 "}  subtitle="PAPÁ QUERIDO"
+            title={"Relatos Latinoamericanos 🤵‍♀️💫 "} subtitle="PAPÁ QUERIDO"
     >
         <div
                 slot="image"
