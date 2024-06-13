@@ -4,7 +4,9 @@ import 'photoswipe/style.css';
 ---
 <section class="max-w-8xl mx-auto py-20 px-20  text-white">
     <h2
-            class="mx-auto mb-8 text-center text-3xl lg:text-6xl font-semibold tracking-wide"
+            class="mx-auto mb-8 text-center text-3xl lg:text-6xl font-semibold tracking-wide
+
+            bg-clip-text text-transparent bg-gradient-to-r from-indigo-400 to-cyan-400 "
     >
         Book actoral
     </h2>
@@ -18,14 +20,14 @@ import 'photoswipe/style.css';
                    data-cropped="true"
                    data-pswp-width={3825}
                    data-pswp-height={4782}
-                   href={`/public/gallery/img-${i + 1}.webp`} target="_blank" >
+                   href={`/gallery/img-${i + 1}.webp`} target="_blank" >
                     <img class="rounded-xl object-cover w-full h-auto"
-                         loading="lazy" src={`/public/gallery/img-${i + 1}.webp`} alt={`img-${i + 1}`}/>
+                         loading="lazy" src={`/gallery/img-${i + 1}.webp`} alt={`img-${i + 1}`}/>
 
                     <img
                             class="rounded-xl object-cover w-full h-auto blur-md opacity-0 group-hover:opacity-100 absolute inset-0 transition contrast-150 -z-10 "
                             loading="lazy"
-                            src={`/public/gallery/img-${i + 1}.webp`}
+                            src={`/gallery/img-${i + 1}.webp`}
                             alt="Fotografía de los premios ESLAND"
                     />
 
