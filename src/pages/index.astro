@@ -7,32 +7,36 @@ import BentoItem from "../components/BentoItem.astro"
 </Layout>
 <section
         class="
- text-white relative z-10 mx-auto mt-24 max-w-[70ch] text-pretty px-6 text-left text-xl sm:px-20  "
+        flex flex-col items-center
+ text-white  relative  mx-auto mt-44 mb-28 max-w-[90ch]  text-pretty px-6  text-xl sm:px-20  "
 >
-    <!--<Logo class="m-auto mb-10 h-auto w-16 text-white" />-->
     <h1
-            class="   mx-auto mb-10 text-wrap text-center text-4xl font-semibold tracking-wide "
+            class="   mx-auto mb-10 text-wrap text-center  text-6xl font-semibold tracking-wide "
     >
-        Bienvenidos/as
-        <br/>Galatea
+        Bienvenidos/as a Galatea Artes escénicas
     </h1>
-    <p> La Asociación <strong class="font-extrabold"> Galatea</strong> fue creada el 3 de diciembre de 2017 para
+    <p class="text-gray-400  max-w-[60ch] text-center"> La Asociación <strong class=" text-white  "> Galatea</strong>
+        fue
+        creada el 3
+        de
+        diciembre de 2017 para
         promover
         y difundir el arte y la cultura en Cajamarca. </p>
     <br/>
-    <p> A lo largo de estos seis años, Galatea ha generado <strong class="font-extrabold"> proyectos teatrales y
-        cinematográficos </strong> que han tenido alcance local, <strong class="font-extrabold"> nacional e
+    <p class="text-gray-400 max-w-[60ch] text-center "> A lo largo de estos seis años, Galatea ha generado <strong
+            class="font-extrabold text-white">
+        proyectos teatrales y
+        cinematográficos </strong> que han tenido alcance local, <strong class=" text-white"> nacional e
         internacional. </strong></P>
 </section>
 
 
 <section
         class="
- text-white relative z-10 mx-auto mt-24 max-w-[70ch] text-pretty px-6 text-left text-xl sm:px-20  "
+ text-white  text-center  my-10  px-6  text-xl sm:px-20  "
 >
-    <!--<Logo class="m-auto mb-10 h-auto w-16 text-white" />-->
     <h1
-            class="   mx-auto mb-10 text-wrap text-center text-4xl font-semibold tracking-wide "
+            class="    mb-10   text-4xl font-semibold tracking-wide "
     >
         Talleres
     </h1>
@@ -63,7 +67,7 @@ import BentoItem from "../components/BentoItem.astro"
                 slot="content"
                 class=" text-white max-w-xl text-base md:text-lg"
                 set:html={"¡Exprésate, diviértete y descubre tu talento en nuestro taller de teatro! 🎭✨ Si tienes 17 años o más, ¡este es tu momento para brillar! Únete a nosotros este 17 de Junio y vive la magia del escenario. 🌟 " +
-                    "<a href='https://wa.me/51960891583?text=Estoy%20interesado%20en%20el%20Taller' target='_blank' class=\"bg-green-400  rounded-lg px-5 p-[10xp] \">\n" +
+                    "</br>" + "<a href='https://wa.me/51960891583?text=Estoy%20interesado%20en%20el%20Taller' target='_blank' class=\"bg-green-400  rounded-lg px-5 p-[10xp] \">\n" +
                     "    Inscripciones\n" +
                     "</a> "
                 }
@@ -88,7 +92,7 @@ import BentoItem from "../components/BentoItem.astro"
                 slot="content"
                 class="text-white max-w-xl text-base md:text-lg"
                 set:html={" Comenzamos nuestro taller de cine el 17 de Junio, enfocado en la escritura de guiones, manejo de cámara y dirección de actores. Con una duración de 3 meses." +
-                    "<a href='https://wa.me/51960891583?text=Estoy%20interesado%20en%20el%20Taller' target='_blank' class=\"bg-green-400  rounded-lg px-5 p-[10xp] \">\n" +
+                    "</br>" + "<a href='https://wa.me/51960891583?text=Estoy%20interesado%20en%20el%20Taller' target='_blank' class=\"bg-green-400  rounded-lg px-5 p-[10xp] \">\n" +
                     "    Inscripciones\n" +
                     "</a> "
                 }
@@ -99,11 +103,10 @@ import BentoItem from "../components/BentoItem.astro"
 
 <section
         class="
- text-white relative z-10 mx-auto mt-24 max-w-[70ch] text-pretty px-6 text-left text-xl sm:px-20  "
+ text-white  text-center  my-10  px-6  text-xl sm:px-20  "
 >
-    <!--<Logo class="m-auto mb-10 h-auto w-16 text-white" />-->
     <h1
-            class="   mx-auto mb-10 text-wrap text-center text-4xl font-semibold tracking-wide "
+            class="    mb-10   text-4xl font-semibold tracking-wide "
     >
         Obras de teatro
     </h1>
