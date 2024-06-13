@@ -1,26 +1,105 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Header from "../components/header.astro";
-import Galeria from "../components/galeria.astro";
+import Layout from "../layouts/Layout.astro";
+import BentoItem from "../components/BentoItem.astro"
 ---
-
 <Layout title="Welcome to Astro.">
 
 </Layout>
-
-<main class="mt-40 flex justify-center items-end ">
-
-<div class="text-white  text-center drop-shadow-2xl ">
-
-
-    <h1 class=" font-extrabold  mb-8  sm:text-8xl text-5xl  bg-clip-text text-transparent bg-gradient-to-r from-indigo-400 to-cyan-400 ">
-        Galatea artes escénicas
+<section
+        class="
+ text-white relative z-10 mx-auto mt-24 max-w-[70ch] text-pretty px-6 text-left text-xl sm:px-20  "
+>
+    <!--<Logo class="m-auto mb-10 h-auto w-16 text-white" />-->
+    <h1
+            class="   mx-auto mb-10 text-wrap text-center text-4xl font-semibold tracking-wide "
+    >
+        Bienvenidos/as
+        <br/>Galatea
     </h1>
-    <span class="sm:text-4xl  text-2xl text-gray-400">
-           Proyectos teatrales y cinematográficos.
-        </span>
-</div>
+    <p> La Asociación <strong class="font-extrabold"> Galatea</strong> fue creada el 3 de diciembre de 2017 para
+        promover
+        y difundir el arte y la cultura en Cajamarca. Se enfoca en la creación, representación,
+        producción y reproducción de <strong class="font-extrabold"> obras teatrales y audiovisuales </strong> con
+        propuestas vanguardistas. </p>
+    <br/>
+    <p> A lo largo de estos seis años, Galatea ha generado <strong class="font-extrabold"> proyectos teatrales y
+        cinematográficos </strong> que han tenido alcance local, <strong class="font-extrabold"> nacional e
+        internacional </strong></P>
+</section>
 
-</main>
-<Galeria/>
+<section
+        class={` 
+    w-full max-w-[1400px]
+    grid lg:grid-cols-10 auto-rows-[30rem] gap-4
+    mx-auto p-6 md:p-12 lg:p-20
+  `}
+>
+    <BentoItem class="col-span-10 lg:col-span-4" title={"TALLER DE TEATRO"} subtitle=" Martes y Jueves de  3:00 a 5:00 p.m. ">
+        <div
+                slot="image"
+                class="background transition-scale absolute bottom-0 left-0 top-0
+        -z-10 h-full w-full bg-blue-950
+        bg-cover bg-center bg-no-repeat opacity-90 bg-blend-luminosity duration-1000 ease-in-out group-hover:scale-110"
+                data-src="img/taller-teatro.png"
+        >
+        </div>
 
+        <p
+                slot="content"
+                class=" text-white max-w-xl text-base md:text-lg"
+                set:html={"¡Exprésate, diviértete y descubre tu talento en nuestro taller de teatro! 🎭✨ Si tienes 17 años o más, ¡este es tu momento para brillar! Únete a nosotros este 17 de Junio y vive la magia del escenario. 🌟 "
+                }
+        />
+    </BentoItem>
+    <!--<img src="img/taller-teatro.png"/>-->
+
+    <BentoItem
+            class="col-span-10 lg:col-span-6"
+            title={"TALLER DE CINE"} subtitle=" Martes y Jueves de 5:00 a 7:00 p.m. "
+    >
+        <div
+                slot="image"
+                class="background transition-scale absolute bottom-0 left-0 top-0
+        -z-10 h-full w-full bg-blue-950
+        bg-cover bg-center bg-no-repeat opacity-90 bg-blend-luminosity duration-1000 ease-in-out group-hover:scale-110"
+                data-src="img/taller-teatro.png"
+        >
+        </div>
+        <p
+                slot="content"
+                class="text-white max-w-xl text-base md:text-lg"
+                set:html={" Comenzamos nuestro taller de cine el 17 de Junio, enfocado en la escritura de guiones, manejo de cámara y dirección de actores. Con una duración de 3 meses."}
+        />
+    </BentoItem>
+    <BentoItem
+            class="col-span-10 lg:col-span-6"
+            title={"i18n.BENTO_TITLE_3"}
+    >
+        <div
+                slot="image"
+                class="background transition-scale absolute bottom-0 left-0 top-0
+        -z-10 h-full w-full bg-blue-950
+        bg-cover bg-center bg-no-repeat opacity-90 bg-blend-luminosity duration-1000 ease-in-out group-hover:scale-110"
+                data-src="/gallery/img-1.webp"
+        >
+        </div>
+        <p
+                slot="content"
+                class="text-white max-w-xl text-base md:text-lg"
+        />
+    </BentoItem>
+    <BentoItem class="col-span-10 lg:col-span-4" title={"i18n.BENTO_TITLE_4"}>
+        <div
+                slot="image"
+                class="background transition-scale absolute bottom-0 left-0 top-0
+        -z-10 h-full w-full bg-blue-950
+        bg-cover bg-center bg-no-repeat opacity-90 bg-blend-luminosity duration-1000 ease-in-out group-hover:scale-110"
+                data-src="/gallery/img-1.webp"
+        >
+        </div>
+        <p
+                slot="content"
+                class="text-white max-w-xl text-base md:text-lg"
+        />
+    </BentoItem>
+</section>
