@@ -1,0 +1,50 @@
+---
+import 'photoswipe/style.css';
+
+---
+<section class="max-w-8xl mx-auto py-20 px-20 text-white">
+    <h2
+            class="mx-auto mb-8 text-center text-3xl lg:text-6xl font-semibold tracking-wide"
+    >
+        Book actoral
+    </h2>
+    <p class="text-center text-2xl">descubre más  fotos de nuestros actores y actrices</p>
+
+
+<div class="grid grid-cols-3 gap-6" id="my-gallery">
+    {
+        Array.from({length: 14}).map((_, i) => (
+                <a class="group rounded-xl hover:scale-105 hover:contrast-[110%] transition-all relative"
+                   data-cropped="true"
+                   data-pswp-width={3825}
+                   data-pswp-height={4782}
+                   href={`/public/gallery/img-${i + 1}.png`} target="_blank" >
+                    <img class="rounded-xl object-cover w-full h-auto"
+                         loading="lazy" src={`/public/gallery/img-${i + 1}.png`} alt={`img-${i + 1}`}/>
+
+                    <img
+                            class="rounded-xl object-cover w-full h-auto blur-md opacity-0 group-hover:opacity-100 absolute inset-0 transition contrast-150 -z-10 "
+                            loading="lazy"
+                            src={`/public/gallery/img-${i + 1}.webp`}
+                            alt="Fotografía de los premios ESLAND"
+                    />
+
+
+                </a>
+        ))
+    }
+
+
+</div>
+</section>
+
+<script>
+    import PhotoSwipeLightbox from 'photoswipe/lightbox';
+
+    const lightbox = new PhotoSwipeLightbox({
+        gallery: '#my-gallery',
+        children: 'a',
+        pswpModule: () => import('photoswipe')
+    });
+    lightbox.init();
+</script>
