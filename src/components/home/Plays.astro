@@ -1,0 +1,76 @@
+---
+import BentoItem from "../BentoItem.astro";
+---
+<section
+        class="
+ text-white  text-center  my-10  px-6  text-xl sm:px-20  "
+>
+    <h1
+            class="    mb-10   text-4xl font-semibold tracking-wide "
+    >
+        Obras de teatro
+    </h1>
+</section>
+
+<section
+        class={` 
+    w-full max-w-[1400px]
+    grid lg:grid-cols-10 auto-rows-[30rem] gap-4
+    mx-auto p-6 md:p-12 lg:p-20
+  `}
+>
+
+    <BentoItem
+            class="col-span-10 lg:col-span-6"
+            title={"Relatos Latinoamericanos 🤵‍♀️💫 "} subtitle="FUTUROFOBIA"
+    >
+        <div
+                slot="image"
+                class="bg-[url('/img/futurofobia.png')] transition-scale absolute bottom-0 left-0 top-0
+        -z-10 h-full w-full
+        bg-cover bg-top bg-no-repeat opacity-90 bg-blend-luminosity duration-1000 ease-in-out group-hover:scale-110"
+                data-src="img/futurofobia.png"
+        >
+        </div>
+        <p
+                slot="content"
+                class="text-white max-w-xl text-base md:text-lg"
+                set:html="Existen fobias de todo tipo. Y remedios para curarlas más extrañas aún. Eso descubrirá Amanda cuando le toque llegar a la casa de Gio para cobrarle por un servicio que nunca necesitó! Ven a reírte e identificarte con estos tiernos personajes. Y tú … ¿a que le tienes fobia?"
+        />
+    </BentoItem>
+    <BentoItem class="col-span-10 lg:col-span-4" title={"Relatos Latinoamericanos 🤵‍♀️💫 "} subtitle="EN EL BORDE">
+        <div
+                slot="image"
+                class="bg-[url('/img/en-el-borde.png')] transition-scale absolute bottom-0 left-0 top-0
+        -z-10 h-full w-full
+        bg-cover bg-center bg-no-repeat opacity-90 bg-blend-luminosity duration-1000 ease-in-out group-hover:scale-110"
+                data-src="/gallery/img-1.webp"
+        >
+            <!--<img src="img/en-el-borde.png" alt="taller-cine"/>-->
+        </div>
+        <p
+                slot="content"
+                class="text-white max-w-xl text-base md:text-lg"
+                set:html="                En la soledad del borde costero de Lima, dos almas perdidas, Adrian y Lara, se encuentran con la firme intención de poner fin a sus vidas. "
+        />
+    </BentoItem>
+    <BentoItem
+            class="lg:col-span-10"
+            title={"Relatos Latinoamericanos 🤵‍♀️💫 "} subtitle="PAPÁ QUERIDO"
+    >
+        <div
+                slot="image"
+                class="bg-[url('/img/papa-querido.png')] transition-scale absolute bottom-0 left-0 top-0
+        -z-10 h-full w-full
+        bg-cover scale-[1.40] bg-top bg-no-repeat opacity-90 bg-blend-luminosity duration-1000 ease-in-out group-hover:scale-150"
+                data-src="/gallery/img-1.webp"
+        >
+            <!--<img src="img/papa-querido.png" alt="papa-querido"/>-->
+        </div>
+        <p
+                slot="content"
+                class="text-white max-w-xl text-base md:text-lg"
+                set:html="Cuatro hermanos que no se conocen se encuentran el día del velorio de su padre y revelan sus verdaderas identidades, distintas facetas de sus vidas y dándose cuenta de cuanto influyó él en sus personalidades."
+        />
+    </BentoItem>
+</section>

@@ -1,6 +1,10 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import BentoItem from "../components/BentoItem.astro"
+import NumerosItem from "../components/NumerosItem.astro"
+import Numbers from "../components/home/Numbers.astro";
+import Workshop from "../components/home/workshop.astro";
+import Plays from "../components/home/Plays.astro";
 ---
 <Layout title="Welcome to Astro.">
 
@@ -31,144 +35,7 @@ import BentoItem from "../components/BentoItem.astro"
 </section>
 
 
-<section
-        class="
- text-white  text-center  my-10  px-6  text-xl sm:px-20  "
->
-    <h1
-            class="    mb-10   text-4xl font-semibold tracking-wide "
-    >
-        Talleres
-    </h1>
+<Workshop/>
+<Plays/>
 
-</section>
-
-
-<section
-        class={` 
-    w-full max-w-[1400px]
-    grid lg:grid-cols-10 auto-rows-[30rem] gap-4
-    mx-auto p-6 md:p-12 lg:p-20
-  `}
->
-    <BentoItem class="col-span-10 lg:col-span-4" title={"TALLER DE TEATRO"}
-               subtitle=" Martes y Jueves de  3:00 a 5:00 p.m. ">
-        <div
-                slot="image"
-                class="bg-[url('/img/taller-teatro-1.png')] transition-scale absolute bottom-0 left-0 top-0
-        -z-10 h-full w-full
-        bg-cover bg-center bg-no-repeat opacity-90 bg-blend-luminosity duration-1000 ease-in-out group-hover:scale-110"
-                data-src="img/taller-teatro-1.png"
-        >
-            <!--<img src="img/taller-teatro-1.png" alt="taller-teatro-1"/>-->
-        </div>
-
-        <p
-                slot="content"
-                class=" text-white max-w-xl text-base md:text-lg"
-                set:html={"¡Exprésate, diviértete y descubre tu talento en nuestro taller de teatro! 🎭✨ Si tienes 17 años o más, ¡este es tu momento para brillar! Únete a nosotros este 17 de Junio y vive la magia del escenario. 🌟 " +
-                    "</br>" + "<a href='https://wa.me/51960891583?text=Estoy%20interesado%20en%20el%20Taller' target='_blank' class=\"bg-green-400  rounded-lg px-5 p-[10xp] \">\n" +
-                    "    Inscripciones\n" +
-                    "</a> "
-                }
-        />
-    </BentoItem>
-    <!--<img src="img/taller-teatro.png"/>-->
-
-    <BentoItem
-            class="col-span-10 lg:col-span-6"
-            title={"TALLER DE CINE"} subtitle=" Martes y Jueves de 5:00 a 7:00 p.m. "
-    >
-        <div
-                slot="image"
-                class="bg-[url('/img/taller-cine.png')] transition-scale absolute bottom-0 left-0 top-0
-        -z-10 h-full w-full
-        bg-cover bg-center bg-no-repeat opacity-90 bg-blend-luminosity duration-1000 ease-in-out group-hover:scale-110"
-        >
-            <!--<img src="img/taller-cine.png" alt="taller-cine"/>-->
-        </div>
-        <p
-                slot="content"
-                class="text-white max-w-xl text-base md:text-lg"
-                set:html={" Comenzamos nuestro taller de cine el 17 de Junio, enfocado en la escritura de guiones, manejo de cámara y dirección de actores. Con una duración de 3 meses." +
-                    "</br>" + "<a href='https://wa.me/51960891583?text=Estoy%20interesado%20en%20el%20Taller' target='_blank' class=\"bg-green-400  rounded-lg px-5 p-[10xp] \">\n" +
-                    "    Inscripciones\n" +
-                    "</a> "
-                }
-        />
-    </BentoItem>
-
-</section>
-
-<section
-        class="
- text-white  text-center  my-10  px-6  text-xl sm:px-20  "
->
-    <h1
-            class="    mb-10   text-4xl font-semibold tracking-wide "
-    >
-        Obras de teatro
-    </h1>
-</section>
-<section
-        class={` 
-    w-full max-w-[1400px]
-    grid lg:grid-cols-10 auto-rows-[30rem] gap-4
-    mx-auto p-6 md:p-12 lg:p-20
-  `}
->
-
-    <BentoItem
-            class="col-span-10 lg:col-span-6"
-            title={"Relatos Latinoamericanos 🤵‍♀️💫 "} subtitle="FUTUROFOBIA"
-    >
-        <div
-                slot="image"
-                class="bg-[url('/img/futurofobia.png')] transition-scale absolute bottom-0 left-0 top-0
-        -z-10 h-full w-full
-        bg-cover bg-center bg-no-repeat opacity-90 bg-blend-luminosity duration-1000 ease-in-out group-hover:scale-110"
-                data-src="img/futurofobia.png"
-        >
-        </div>
-        <p
-                slot="content"
-                class="text-white max-w-xl text-base md:text-lg"
-                set:html="Existen fobias de todo tipo. Y remedios para curarlas más extrañas aún. Eso descubrirá Amanda cuando le toque llegar a la casa de Gio para cobrarle por un servicio que nunca necesitó! Ven a reírte e identificarte con estos tiernos personajes. Y tú … ¿a que le tienes fobia?"
-        />
-    </BentoItem>
-    <BentoItem class="col-span-10 lg:col-span-4" title={"Relatos Latinoamericanos 🤵‍♀️💫 "} subtitle="EN EL BORDE">
-        <div
-                slot="image"
-                class="bg-[url('/img/en-el-borde.png')] transition-scale absolute bottom-0 left-0 top-0
-        -z-10 h-full w-full
-        bg-cover bg-center bg-no-repeat opacity-90 bg-blend-luminosity duration-1000 ease-in-out group-hover:scale-110"
-                data-src="/gallery/img-1.webp"
-        >
-            <!--<img src="img/en-el-borde.png" alt="taller-cine"/>-->
-        </div>
-        <p
-                slot="content"
-                class="text-white max-w-xl text-base md:text-lg"
-                set:html="                En la soledad del borde costero de Lima, dos almas perdidas, Adrian y Lara, se encuentran con la firme intención de poner fin a sus vidas. "
-        />
-    </BentoItem>
-    <BentoItem
-            class="lg:col-span-10"
-            title={"Relatos Latinoamericanos 🤵‍♀️💫 "} subtitle="PAPÁ QUERIDO"
-    >
-        <div
-                slot="image"
-                class="bg-[url('/img/papa-querido.png')] transition-scale absolute bottom-0 left-0 top-0
-        -z-10 h-full w-full
-        bg-cover scale-[1.40] bg-center bg-no-repeat opacity-90 bg-blend-luminosity duration-1000 ease-in-out group-hover:scale-150"
-                data-src="/gallery/img-1.webp"
-        >
-            <!--<img src="img/papa-querido.png" alt="papa-querido"/>-->
-        </div>
-        <p
-                slot="content"
-                class="text-white max-w-xl text-base md:text-lg"
-                set:html="Cuatro hermanos que no se conocen se encuentran el día del velorio de su padre y revelan sus verdaderas identidades, distintas facetas de sus vidas y dándose cuenta de cuanto influyó él en sus personalidades."
-        />
-    </BentoItem>
-</section>
+<Numbers/>
