@@ -13,10 +13,10 @@ import NumerosItem from "../NumerosItem.astro";
             <span class="counter" slot="count" data-count="25">0</span>
         </NumerosItem>
         <NumerosItem title="Cortometrajes">
-            <span class="counter" slot="count" data-count="6">0</span>
+            <span class="counter" slot="count" data-count="3">0</span>
         </NumerosItem>
         <NumerosItem title="Proyectos">
-            <span class="counter" slot="count" data-count="6">0</span>
+            <span class="counter" slot="count" data-count="4">0</span>
         </NumerosItem>
     </div>
 
@@ -34,7 +34,7 @@ import NumerosItem from "../NumerosItem.astro";
                 if (count === finalCount) {
                     clearInterval(interval);
                 }
-            }, 200);
+            }, 100);
         };
 
         const observerOptions = {
